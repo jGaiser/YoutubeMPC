@@ -1,0 +1,13 @@
+youtube-dl use of 'python' did not work until installing python-is-python3 package
+$ sudo apt install python-is-python3
+
+(Almost certainly not necessary on Heroku)
+
+---------------------------------------
+Youtube-dl returns an error:
+
+ffprobe/avprobe and ffmpeg/avconv not found. Please install one
+
+Fixed with:
+$ sudo apt-get install ffmpeg
+---------------------------------------

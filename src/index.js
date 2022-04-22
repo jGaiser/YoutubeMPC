@@ -5,11 +5,20 @@ import ReactDOM from 'react-dom';
 function YoutubeMPCApp(props) {
   return (
     <div id='pageApp'>
-      <div className='containerTop'>
-        
-      </div>
-      <div className='containerBottom'>
+      <div className='container top'>
+        <div className='container left'>
+        </div>  
 
+        <div className='container right'>
+        </div>
+      </div>
+
+      <div className='container bottom'>
+        <div className='container left'>
+        </div>  
+
+        <div className='container right'>
+        </div>
       </div>
     </div>
   );
