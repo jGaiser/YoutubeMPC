@@ -7,6 +7,7 @@ function YoutubeMPCApp(props) {
     <div id='pageApp'>
       <div className='container top'>
         <div className='container left'>
+          <YTAudioLoader />
         </div>  
 
         <div className='container right'>
@@ -22,6 +23,29 @@ function YoutubeMPCApp(props) {
       </div>
     </div>
   );
+}
+
+class YTAudioLoader extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.handleChange = this.handleChange.bind(this)
+
+    this.state = {
+      URL: '' 
+    }
+  }
+
+  handleChange(e) {
+    this.setState({URL: e.target.value})
+  }
+
+  return (
+    const url = this.state.URL;
+    <fieldset>
+      <input value={url} onChange={this.handleChange} />
+    </fieldset>
+  )
 }
 
 <div id='root'></div>
